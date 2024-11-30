@@ -11,6 +11,7 @@ import infiniteBorder from "../src/assets/infiniteBorder.png";
 import git from "../src/assets/git.png";
 import react from "../src/assets/react.png";
 import vercel from "../src/assets/vercel.png";
+import FidgetSpinner from "../src/assets/FidgetSpinner.png";
 import ContactUs from "./components/ContactUs";
 import { SuccesContextProvider } from "./hooks/SuccesContext";
 import Toast from "./components/Toast";
@@ -312,7 +313,7 @@ function App() {
 									alt="smahi dev"
 								/>
 								<img
-									src="../src/assets/FidgetSpinner.png"
+									src={FidgetSpinner}
 									className="w-[14px] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
 									alt="Fidget spinner"
 								/>

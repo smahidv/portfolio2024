@@ -3,6 +3,7 @@ import AnimNav from "./AnimNav";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { balloon } from "../animate";
 import { useMediaQuery } from "react-responsive";
+import logo from "../assets/whiteLogo.png";
 
 export default function Navigation() {
 	const [open, setOpen] = useState(false);
@@ -30,9 +31,9 @@ export default function Navigation() {
 					variants={balloon}
 					initial="initial"
 					animate="enter"
-					src="src/assets/whiteLogo.png"
+					src={logo}
 					className="w-[55px] lg:w-[90px] h-auto"
-					alt="star"
+					alt="logo"
 				/>
 				<AnimNav open={open} toggleMenu={toggleMenu} />
 				<motion.div
