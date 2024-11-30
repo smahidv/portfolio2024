@@ -2,6 +2,7 @@ import { projectsList } from "../constants";
 import videoURL from "../assets/demo.mp4";
 import arrow from "../assets/arrow.png";
 import { motion } from "framer-motion";
+import whiteStar from "../assets/whiteStar.png"
 
 export default function Projects() {
 	const downloadVideoFile = () => {
@@ -52,7 +53,7 @@ export default function Projects() {
 								className="container bg-secondary rounded-sm w-fit px-2 py-1 sm:p-2  flex gap-2 lg:gap-4 items-center shadow-sm"
 							>
 								<img
-									src="src/assets/Whitestar.png"
+									src={whiteStar}
 									className=" w-[14px] lg:w-[18px] scale"
 									alt="star"
 								/>
@@ -60,7 +61,7 @@ export default function Projects() {
 									View code
 								</div>
 								<img
-									src="src/assets/Whitestar.png"
+									src={whiteStar}
 									className="w-[14px] lg:w-[18px] scale  "
 									alt="star"
 								/>
