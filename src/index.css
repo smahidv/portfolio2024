@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.notfirst\:borderTop{
+  border-top: 0.5px solid; 
+}
+
+@media (min-width: 1024px) {
+  .notfirst\:borderTop:not(:first-child) {
+    border-top: 0.5px solid;
+  }
+}
