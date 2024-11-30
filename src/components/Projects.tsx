@@ -2,7 +2,6 @@ import { projectsList } from "../constants";
 import videoURL from "../assets/demo.mp4";
 import arrow from "../assets/arrow.png";
 import { motion } from "framer-motion";
-import { fadeOut } from "../animate";
 
 export default function Projects() {
 	const downloadVideoFile = () => {

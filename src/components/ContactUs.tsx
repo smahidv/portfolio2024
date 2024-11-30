@@ -15,7 +15,7 @@ export default function ContactUs() {
 				"eJXO1u7LH1R-xd52l"
 			)
 			.then(
-				(result) => {
+				() => {
 					succesMessage?.handleIsSent()
 				},
 				(error) => {

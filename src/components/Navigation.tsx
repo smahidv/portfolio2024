@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import { useState } from "react";
 import AnimNav from "./AnimNav";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { balloon } from "../animate";
