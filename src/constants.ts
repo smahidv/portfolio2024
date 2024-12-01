@@ -15,7 +15,7 @@ export const projectsList = [
         description: "For this luxury perfume brand, I designed a user-friendly website, I helped elevate the brand's online presence, making it easy for customers to explore and engage with their products.",
         date: "Sep 29, 2024",
         languages: ["Next.js","TypeScript", "Framer Motion"],
-        code: "https://github.com/smahidv/xuma.git",
+        code: "https://github.com/smahidv/perfume-project.git",
         live: "https://perfume-project-iota.vercel.app/",
         color:"#D5CFCC"
     },
