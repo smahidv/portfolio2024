@@ -1,7 +1,7 @@
 import { projectsList } from "../constants";
 import videoURL from "../assets/demo.mp4";
 import { motion } from "framer-motion";
-import whiteStar from "../assets/Whitestar.png";
+import whiteStar from "../assets/whiteStar.png";
 import blackStar from "../assets/blackStar.png";
 
 export default function Projects() {
