@@ -32,7 +32,7 @@ export default function Navigation() {
 					initial="initial"
 					animate="enter"
 					src={logo}
-					className="w-[55px] lg:w-[90px] h-auto"
+					className="w-[55px] sm:w-[75px] lg:w-[90px] h-auto"
 					alt="logo"
 				/>
 				<AnimNav open={open} toggleMenu={toggleMenu} />

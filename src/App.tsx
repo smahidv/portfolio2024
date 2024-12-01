@@ -17,7 +17,7 @@ import { SuccesContextProvider } from "./hooks/SuccesContext";
 import Toast from "./components/Toast";
 import AnimatedCounter from "./components/AnimatedCounter";
 import AnimatedTitle from "./components/AnimatedTitle";
-import { useEffect, } from "react";
+import { useEffect } from "react";
 import Lenis from "lenis";
 import FadeOut from "./components/FadeOut";
 import { motion } from "framer-motion";
@@ -26,7 +26,6 @@ import Star from "./components/Star";
 import SplashScreenManager from "./utils/SplashScreenManager";
 
 function App() {
-	
 	useEffect(() => {
 		const lenis = new Lenis();
 		function raf(time: number) {
@@ -37,13 +36,12 @@ function App() {
 		requestAnimationFrame(raf);
 	}, []);
 
-
 	return (
 		<SuccesContextProvider>
 			<BrowserRouter>
 				<SplashScreenManager>
-					<div id="home" className="relative">
-						<header className="relative">
+					<div className="relative">
+						<header id="home" className="relative">
 							<div className="relative bg-hero bg-no-repeat  w-screen  bg-[length:100vw_140px] h-[140px] xs:bg-[length:100vw_200px] xs:h-[200px] md:bg-[length:100vw_280px] md:h-[280px]   lg:bg-[length:100vw_450px] lg:h-[450px]">
 								<Navigation />
 								<FadeOut />
@@ -329,17 +327,6 @@ function App() {
 									smahiDev
 								</a>
 							</div>
-							<div className="capitalize text-secondary font-semibold">
-								designed by{" "}
-								<a
-									target="_blank"
-									rel="noopener noreferrer"
-									href="https://www.behance.net/yassirlakssir"
-									className="font-bold text-secondary hover:text-primary transition-colors duration-600"
-								>
-									Yassir Lakssir
-								</a>
-							</div>
 							<div className="capitalize text-secondary font-semibold flex flex-col md:flex-row justify-center items-center gap-2">
 								© smahiDev - 2024. Built with
 								<img
@@ -356,7 +343,7 @@ function App() {
 						</footer>
 						<Toast />
 					</div>
-					</SplashScreenManager>
+				</SplashScreenManager>
 			</BrowserRouter>
 		</SuccesContextProvider>
 	);

@@ -38,7 +38,7 @@ export default function Navigation() {
 					<li key={index}>
 						<Link
 							smooth
-							to={item.to}
+							to={item.up ?? item.to}
 							className="p-3 relative z-20 rounded-full text-white hover:text-black capitalize font-[500]"
 							onMouseEnter={handleMouseEnter}
 							onMouseLeave={handleMouseLeave}

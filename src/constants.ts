@@ -52,7 +52,7 @@ export const projectsList = [
 
 
 export  const menuItems = [
-    { name: "home", to: "#" },
+    { name: "home", to: "" ,up:"#home"},
     { name: "about me", to: "#aboutMe" },
     { name: "projects", to: "#projects" },
     { name: "let's talk", to: "#contact" },

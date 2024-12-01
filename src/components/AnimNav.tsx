@@ -13,6 +13,9 @@ interface AnimNavType {
 export default function AnimNav({ open, toggleMenu }: AnimNavType) {
 
 	const [isLgScreen, setIsLgScreen] = useState(window.innerWidth >= 1024);
+	const currentHash = window.location.hash;
+	console.log(currentHash);
+	
 
 	useEffect(() => {
 		const handleResize = () => setIsLgScreen(window.innerWidth >= 1024);
@@ -59,7 +62,7 @@ export default function AnimNav({ open, toggleMenu }: AnimNavType) {
 									onClick={toggleMenu}
 									smooth
 									to={item.to}
-									className={`text-[2.4rem] lg:text-base capitalize font-[500] ${menuItems.length - 1 === i && "lg:font-bold lg:text-sm  "}`}
+									className={`text-[2.4rem] lg:text-base capitalize font-[500] ${menuItems.length - 1 === i && "lg:font-bold lg:text-sm  "} ${isLgScreen && currentHash === item.to ? "text-primaryLight/90 hover:text-primaryLight " : "text-white/90 hover:text-white"}`}
 								>
 									{item.name}
 								</Link>

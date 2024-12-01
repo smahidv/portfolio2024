@@ -86,7 +86,7 @@ export default function AnimatedButton() {
 			<button
 				translate="no"
 				onClick={onButtonClick}
-				className="relative inline-block bg-secondary hover:bg-white hover:text-secondary hover:border hover:border-secondary shadow-2xl text-white  md:text-sm text-[0.4rem] xs:text-[0.52rem] font-semibold md:px-6 px-3 md:py-3 rounded-md"
+				className="relative inline-block bg-secondary hover:bg-white hover:text-secondary hover:border hover:border-secondary shadow-2xl text-white  md:text-sm text-[0.4rem] mobi:text-[0.52rem] font-semibold md:px-6 px-2 xs:px-3  md:py-3 rounded-md"
 			>
 				<span className="sr-only">Get In Touch</span>
 				<span className="block h-6 overflow-hidden" aria-hidden>
