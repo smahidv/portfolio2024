@@ -47,21 +47,21 @@ export default function Projects() {
 							<div className="text-[0.5rem] mobi:text-[0.6rem] font-medium sm:text-xs mb-4 xs:mb-12 xl:mb-10 max-w-[22ch] xs:max-w-[25ch] mobi:max-w-[30ch]">
 								{project.description}
 							</div>
-						<div className="max-w-[100px] mobi:max-w-[120px] sm:max-w-[190px]  space-y-2">
+						<div className="max-w-[120px] mobi:max-w-[130px] sm:max-w-[190px]  space-y-2">
 							<a
 								id="downloadBtn"
 								onClick={!project.live ? downloadVideoFile : undefined}
 								href={project.live}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="w-full container cursor-pointer bg-secondary rounded-sm p-1   sm:p-2  flex justify-between lg:gap-4 items-center shadow-sm"
+								className="w-full container cursor-pointer bg-secondary rounded-sm p-2  flex justify-between lg:gap-4 items-center shadow-sm"
 							>
 								<img
 									src={whiteStar}
 									className="w-[8px] sm:w-[14px]  scale"
 									alt="star"
 								/>
-								<div className="uppercase text-center  font-semibold  text-white text-[0.4rem] mobi:text-[0.5rem] sm:text-[0.7rem]  ">
+								<div className="uppercase text-center  font-semibold  text-white text-[0.4rem] mobi:text-[0.55rem] sm:text-[0.7rem]  ">
 									{project.live ? "View project" : "download demo"}
 								</div>
 								<img
@@ -74,14 +74,14 @@ export default function Projects() {
 								href={project.code}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="w-full  container bg-white rounded-sm  p-1 sm:p-2  flex justify-between lg:gap-4 items-center shadow-sm"
+								className="w-full  container bg-white rounded-sm p-2  flex justify-between lg:gap-4 items-center shadow-sm"
 							>
 								<img
 									src={blackStar}
 									className="w-[8px] sm:w-[14px]  scale"
 									alt="star"
 								/>
-								<div className="uppercase  font-semibold  text-secondary text-[0.4rem] mobi:text-[0.5rem] sm:text-[0.7rem] ">
+								<div className="uppercase  font-semibold  text-secondary text-[0.4rem] mobi:text-[0.55rem] sm:text-[0.7rem] ">
 									View code
 								</div>
 								<img
