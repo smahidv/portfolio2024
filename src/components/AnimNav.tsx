@@ -48,21 +48,18 @@ export default function AnimNav({ open, toggleMenu }: AnimNavType) {
 								custom={i}
 								variants={
 									isLgScreen
-										? menuItems.length - 1 === i
-											? balloonSlide 
-											: trampoline 
+										? trampoline 
 										: slide 
 								}
 								initial="initial"
 								animate="enter"
 								exit="exit"
-								className={`${menuItems.length - 1 === i && "lg:ml-auto lg:bg-gradient-to-tr lg:from-primary lg:to-primaryLight  lg:px-3 lg:py-0.5 lg:rounded-sm  "}`}
 							>
 								<Link
 									onClick={toggleMenu}
 									smooth
 									to={item.to}
-									className={`text-[2.4rem] lg:text-base capitalize font-[500] ${menuItems.length - 1 === i && "lg:font-bold lg:text-sm  "} ${isLgScreen && currentHash === item.to ? "text-primaryLight/90 hover:text-primaryLight " : "text-white/90 hover:text-white"}`}
+									className={`text-[2.4rem] lg:text-base capitalize font-[500]  ${isLgScreen && currentHash === item.to ? "text-primaryLight/90 hover:text-primaryLight " : "text-white/90 hover:text-white"}`}
 								>
 									{item.name}
 								</Link>

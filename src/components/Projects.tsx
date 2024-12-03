@@ -20,7 +20,7 @@ export default function Projects() {
 			initial={{ opacity: 0, scale: 0.95 }}
 			whileInView={{ opacity: 1, scale: 1 }}
 			transition={{ duration: 0.5 }}
-			className="grid   lg:grid-cols-2 gap-8  mt-12   "
+			className="grid   lg:grid-cols-2 gap-8     "
 		>
 			{projectsList.map((project, index) => (
 				<div
@@ -32,7 +32,7 @@ export default function Projects() {
 						{project.languages.map((language, i) => (
 							<div
 								key={i}
-								className="border-white rounded-sm text-[0.6em] mobi:text-[0.8rem]  border-[1.5px] sm:border-2 text-white font-medium px-3 py-1/2 sm:py-1"
+								className="border-white rounded-md text-[0.6em] mobi:text-[0.8rem]  border-[1.5px] sm:border-2 text-white font-medium px-3 py-1/2 sm:py-1"
 							>
 								{language}
 							</div>
@@ -54,7 +54,7 @@ export default function Projects() {
 								href={project.live}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="w-full container cursor-pointer bg-secondary rounded-sm p-2  flex justify-between lg:gap-4 items-center shadow-sm"
+								className="w-full container cursor-pointer bg-secondary rounded-md p-2  flex justify-between lg:gap-4 items-center shadow-sm"
 							>
 								<img
 									src={whiteStar}
@@ -74,7 +74,7 @@ export default function Projects() {
 								href={project.code}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="w-full  container bg-white rounded-sm p-2  flex justify-between lg:gap-4 items-center shadow-sm"
+								className="w-full  container bg-white rounded-md p-2  flex justify-between lg:gap-4 items-center shadow-sm"
 							>
 								<img
 									src={blackStar}

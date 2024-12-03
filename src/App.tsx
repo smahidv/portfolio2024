@@ -89,7 +89,7 @@ function App() {
 								id="aboutMe"
 								className="mx-auto w-[92vw] max-w-[1124px] relative "
 							>
-								<AnimatedTitle title="about me" />
+								<AnimatedTitle  title="about me" />
 								<div className="flex flex-col lg:flex-row gap-4">
 									<div className="lg:basis-[50%] bg-gradient-to-t p-6 shadow-2xl from-primary to-primaryLight rounded-[2.5em] flex items-center">
 										<div>
@@ -196,7 +196,7 @@ function App() {
 							</div>
 							{/* *********************************education********************************************* */}
 							<div className="mx-auto w-[92vw] max-w-[1124px] md:mt-48 mt-24">
-								<AnimatedTitle title="education" />
+								<AnimatedTitle isEdu title="education" />
 								<div className="relative bg-educationBG  bg-[length:100%_400px] h-[400px] md:bg-[length:100%_650px] md:h-[650px] bg-no-repeat">
 									<div className="absolute -top-12 md:-top-[5.5rem] right-3.5 md:right-8">
 										<img
@@ -246,7 +246,7 @@ function App() {
 									</div>
 									{/* *********************************education pink stars********************************************* */}
 									<Star className="absolute w-[14px] right-[5%] -top-[25%] " />
-									<Star className="absolute w-[26px] left-[15%] top-0 " />
+									<Star className="absolute w-[26px] left-[12%] top-[4%] " />
 									{/* *********************************education white stars********************************************* */}
 									<Star
 										isWhite
