@@ -42,20 +42,6 @@ export const balloon = {
         },
     },
 };
-export const balloonSlide = {
-    initial: { x: "300px", scale: 0.2, rotate: 0 },
-    enter: {
-        x: "0",
-        scale: [0.3, 0.4, 0.5, 1],
-        rotate: 360,
-        transition: {
-            duration: 1.2,
-            ease: "easeOut",
-            delay: 2,
-        },
-    },
-};
-
 export const fadeOut = {
     initial: { opacity: 0 },
     whileInView: { opacity: 1 },

@@ -1,7 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { menuItems } from "../constants";
 import { AnimatePresence, motion } from "framer-motion";
-import { balloonSlide, menuSlide, reset, slide, trampoline } from "../animate";
+import { menuSlide, reset, slide, trampoline } from "../animate";
 import { useEffect, useState } from "react";
 import Curve from "./Curve";
 
