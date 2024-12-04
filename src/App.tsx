@@ -272,7 +272,7 @@ function App() {
 							{/* *********************************projects********************************************* */}
 							<div
 								id="projects"
-								className="my-24 mx-auto w-[92vw] max-w-[1124px] relative"
+								className=" my-[43px] md:my-[83px] lg:my-[109px] xl:my-[90px]  mx-auto w-[92vw] max-w-[1124px] relative"
 							>
 								<Star className="absolute w-[25px] -top-[5%] right-[16%] lg:-top-[13%] " />
 								<Star className="absolute w-[18px] top-0 right-1/2 " />
@@ -282,7 +282,7 @@ function App() {
 								<Projects />
 							</div>
 							{/* *********************************partners********************************************* */}
-							<div className="mx-auto w-[92vw] max-w-[1124px]  relative my-24">
+							<div className="mx-auto w-[92vw] max-w-[1124px]  relative my-[43px] md:my-[83px] lg:my-[109px] xl:my-[90px] ">
 								<AnimatedTitle title="our partners" />
 								<div className="flex justify-center">
 									<motion.img
@@ -297,7 +297,7 @@ function App() {
 							{/* *********************************contact********************************************* */}
 							<div
 								id="contact"
-								className="relative mt-24 mb-16 mx-auto w-[92vw] max-w-[1124px] "
+								className="relative  mx-auto w-[92vw] max-w-[1124px] my-[43px] md:my-[83px] lg:my-[109px] xl:my-[90px]  "
 							>
 								<AnimatedTitle title="get in touch" />
 								<ContactUs />

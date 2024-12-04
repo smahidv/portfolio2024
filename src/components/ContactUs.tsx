@@ -53,7 +53,7 @@ export default function ContactUs() {
 			<input
 				type="submit"
 				value="submit"
-				className="cursor-pointer hover:opacity-95 bg-primaryLight text-white  font-bold text-sm px-6 py-2 justify-self-end w-fit uppercase tracking-widest"
+				className="cursor-pointer rounded-b-2xl hover:opacity-95 bg-primaryLight text-white  font-bold text-sm px-6 py-2 justify-self-end w-fit uppercase tracking-widest"
 			/>
 		</form>
 	);
